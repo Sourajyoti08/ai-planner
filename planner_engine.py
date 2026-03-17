@@ -2,7 +2,7 @@ import google.generativeai as genai
 from settings import SETTINGS
 import os
 # configure AI
-genai.configure(api_key="AIzaSyBgcR4hrby06uIU-CgfiW_gRm2i5rK3V90")
+genai.configure(api_key=os.getenv("API_KEY"))
 
 model = genai.GenerativeModel("gemini-3-flash-preview")
 
