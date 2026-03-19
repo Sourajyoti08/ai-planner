@@ -38,7 +38,7 @@ def home():
         text-align:center;
         font-size: clamp(35px, 8vw, 60px);
         margin-top:10px;
-        font-family: 'Special Elite', monospace;
+        font-family: 'Special Elite',  monospace;
         letter-spacing:2px;
     ">
        <span style="color:#00bfff; font-size: clamp(40px, 9vw, 70px);">AI </span>Daily Planner
