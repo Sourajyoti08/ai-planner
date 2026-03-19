@@ -13,6 +13,7 @@ def home():
         schedule = create_schedule(tasks)
 
     return f"""
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <body style="background: #242424 radial-gradient(circle at top, #252525, #000000); margin-bottom: 250px; font-family: 'JetBrains Mono', monospace; color:white;">
     <div style="
         display:flex;
