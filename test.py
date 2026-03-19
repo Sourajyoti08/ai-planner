@@ -15,8 +15,8 @@ def home():
     return f"""
     <body style="background-color: rgb(31, 31, 31);">
     
-    <h2 style="font-family: Special Elite, monospace;color: white;font-size: 40px;">AI Daily Planner.</h2>
-    <div style="display: flexbox; justify-content: center; align-items: center;">
+    <h2 style="font-family: Special Elite, monospace;color: white;font-size: 50px;">AI Daily Planner.</h2>
+    <div style="display: flex; justify-content: center; align-items: center;">
     <form method="post">
         <textarea style="font-family: jetbrains mono;
     padding: 5px;
@@ -40,7 +40,7 @@ def home():
     </form>
     </div>
 </body>
-    <pre style="color: white; font-family: Special Elite;">{schedule}</pre>
+    <pre style="color: white; font-family: "Special Elite", monospace;">{schedule}</pre>
     """
 
 app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)), debug=True)
