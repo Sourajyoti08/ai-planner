@@ -142,10 +142,17 @@ Example: &quot;feeling low energy today, I just want to revise one chapter, mayb
     Made by a Solo DEV ⚡ | <a style="text-decoration: none; color: white" href="mailto:sourajyotidey2008@gmail.com"> Contact Me</a>
 </div>
 </body>
+<div style="
+        padding: 20px;
+        width: 90%;
+        max-width: 800px;
+        margin: 20px auto;
+        border: none;
+        ">
     <pre style="color: white; font-family: "Special Elite", monospace;  white-space: pre-wrap;
     word-wrap: break-word;
     overflow-x: hidden;
-    color: white;">{schedule}</pre>
+    color: white;">{schedule}</pre></div>
     """
 
 app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)), debug=True)
