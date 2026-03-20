@@ -14,7 +14,11 @@ def home():
 
     return f"""
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <body style="background: #242424 radial-gradient(circle at top, #252525, #000000); margin-bottom: 250px; font-family: 'JetBrains Mono', monospace; color:white;">
+    <body style="background: #242424 radial-gradient(circle at top, #252525, #000000);
+    margin-bottom: 250px;
+    font-family: 'JetBrains Mono', monospace;
+    color:white;
+    ">
     <div style="
         display:flex;
         justify-content:center;
@@ -54,8 +58,7 @@ def home():
     ">AI-powered daily planning in seconds.<br>
         Turn your <span style="
         font-size: clamp(20px, 6vw, 35px);
-        font-family:'chiller';
-        filter: blur(0.7px);
+        filter: blur(0.8px);
         color: rgb(255, 132, 132);
         letter-spacing: 2px;
         ">
@@ -136,7 +139,7 @@ Example: &quot;feeling low energy today, I just want to revise one chapter, mayb
     padding: 10px;
     font-size: 12px;
 ">
-    Made by  ⚡ | <a style="text-decoration: none; color: white" href="mailto:sourajyotidey2008@gmail.com"> Contact Me</a>
+    Made by a Solo DEV ⚡ | <a style="text-decoration: none; color: white" href="mailto:sourajyotidey2008@gmail.com"> Contact Me</a>
 </div>
 </body>
     <pre style="color: white; font-family: "Special Elite", monospace;  white-space: pre-wrap;
