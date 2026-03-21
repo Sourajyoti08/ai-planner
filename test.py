@@ -57,10 +57,9 @@ def home():
         line-height: 25px;
     ">AI-powered daily planning in seconds.<br>
         Turn your <span style="
-        font-size: clamp(20px, 6vw, 35px);
-        filter: blur(0.8px);
+        font-size: clamp(14px, 3.5vw, 18px);
+        filter: blur(1px);
         color: rgb(255, 132, 132);
-        letter-spacing: 2px;
         ">
         messy</span> thoughts into a perfectly structured day.
     </p>
