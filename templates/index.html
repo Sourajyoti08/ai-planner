@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<title>AI Planner</title>
+</head>
+
+<body>
+
+<div class="badge">● Time<span>IT</span> App</div>
+
+<h1><span class="ai">AI</span> Daily Planner</h1>
+
+<hr class="line">
+
+<p class="subtitle">
+AI-powered daily planning in seconds.<br>
+Turn your <span class="messy">messy</span> thoughts into a perfectly structured day.
+</p>
+
+<hr class="line small">
+
+<div class="form-container">
+    <form method="post">
+
+        <textarea name="tasks"
+        placeholder="What do you want to do today?
+
+Example: 'feeling low energy today, I just want to revise one chapter...'"></textarea>
+
+        <button type="submit" onclick="this.innerText='GENERATING...';">
+            GENERATE
+        </button>
+
+    </form>
+</div>
+
+<div class="output">
+    <pre>{{ schedule }}</pre>
+</div>
+
+<div class="footer">
+    Made by a Solo DEV ⚡ |
+    <a href="mailto:sourajyotidey2008@gmail.com">Contact Me</a>
+</div>
+
+</body>
+</html>
