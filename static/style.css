@@ -139,7 +139,41 @@ pre {
     font-size:12px;
 }
 
+
 .footer a {
     color:white;
     text-decoration:none;
+}
+
+.box {
+    flex: 1;
+    padding: 10px;
+    background: #181818;
+    color: rgb(255, 1, 1);
+    border-radius: 10px;
+    text-align: center;
+    font-size: clamp(20px, 4vw, 30px);
+}
+
+#step-text {
+    font-size: clamp(12px, 3vw, 16px);
+    color: rgb(101, 101, 101);
+    font-family: jetbrains mono;
+}
+
+#how-it {
+    padding-left: 20px;
+    color: rgb(101, 101, 101);
+    text-decoration: none;
+}
+
+
+
+
+
+/* Mobile view */
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
 }
