@@ -188,6 +188,7 @@ pre {
 #step-text {
     font-size: clamp(14px, 3.5vw, 18px);
     color: rgb(101, 101, 101);
+    font-weight: 100;
     font-family: "Jetbrains Mono", "Special Elite", monospace;
 }
 
