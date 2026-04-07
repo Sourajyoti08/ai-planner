@@ -28,8 +28,24 @@ body {
     margin-right:auto;
 }
 
-.badge span {
-    color:#ffd35a;
+.pulse-dot{
+    width: 8px;
+    height: 8px;
+    background: rgb(255,110,110);
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+    box-shadow: 0 0 8px rgb(255,110,110);
+}
+@keyframes pulse{
+0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+}
+
+50% {
+    opacity: 0.5;
+    transform: scale(0.8);
+}
 }
 
 /* title */
