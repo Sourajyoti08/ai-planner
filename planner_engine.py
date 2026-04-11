@@ -17,6 +17,7 @@ User tasks:
 
 Constraints:
 Wake up: {SETTINGS['wake']}
+Breakfast: {SETTINGS['breakfast']}
 Lunch: {SETTINGS['lunch']}
 Dinner: {SETTINGS['dinner']}
 Sleep: {SETTINGS['sleep']}
