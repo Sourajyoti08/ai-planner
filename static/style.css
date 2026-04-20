@@ -192,6 +192,7 @@ pre {
 }
 
 .box {
+    position: relative;
     flex: 1;
     padding: 20px;
     background: #181818;
@@ -199,13 +200,65 @@ pre {
     border-radius: 10px;
     text-align: center;
     font-size: clamp(20px, 4vw, 30px);
+    z-index: 1;
+    /* Ensure the rotating gradient doesn't spill out */
+    overflow: hidden; 
 }
 
+/* The Animated Snake Layer */
+.box::before {
+    content: "";
+    position: absolute;
+    /* We make this larger than the box so the rotation covers the corners */
+    inset: -50%; 
+    z-index: -1;
+    
+    /* Conic gradient creates the 'snake' head and tail */
+    background: conic-gradient(
+        from 0deg,
+        transparent 70%,
+        red 100%
+    );
+    
+    /* Updated animation name to match your @keyframes */
+    animation: snake 3s linear infinite;
+}
+
+/* The Inner Mask (Covers the middle so only the edge shows) */
+.box::after {
+    content: "";
+    position: absolute;
+    /* This 'inset' value determines your border thickness */
+    inset: 3px; 
+    background: #181818;
+    border-radius: inherit;
+    z-index: -1;
+}
+
+/* Rotation Animation */
+@keyframes snake {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Speed Variations */
+.box1::before { animation-duration: 2s; }
+.box2::before { animation-duration: 3.5s; animation-delay: 0.5s; }
+.box3::before { animation-duration: 5s; animation-delay: 1s; }
 #step-text {
-    font-size: clamp(14px, 3.5vw, 18px);
+    font-size: clamp(14px, 3.2vw, 18px);
     color: rgb(101, 101, 101);
-    font-weight: 100;
     font-family: "Jetbrains Mono", "Special Elite", monospace;
+}
+
+#how-it {
+    padding-left: 20px;
+    color: rgb(101, 101, 101);
+    text-decoration: none;
 }
 
 #how-it {
