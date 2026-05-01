@@ -28,7 +28,7 @@ Rules:
 - include small breaks
 - keep it realistic
 - output only the schedule with times
-- give a custom tip for the day, in order to reach the goals. Like secret tip.
+- give 3 custom tips for the day, in order to reach the goals. Like secret tips.
 Example format:
 
 07:00 AM - Wake up
@@ -37,7 +37,10 @@ Example format:
 ....
 ....
 
-TIP: .................................
+TIPs:
+1..................................
+2.
+3.
 """
 
     response = model.generate_content(prompt)
