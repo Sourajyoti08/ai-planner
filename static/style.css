@@ -267,6 +267,28 @@ pre {
     text-decoration: none;
 }
 
+.add-to{
+    display: flex;    
+}
+
+
+.add{
+    background: transparent;
+    border:1px solid rgb(24, 103, 0);
+    font-family:  "Jetbrains Mono", "Special Elite", monospace;
+    font-size: clamp(10px, 2vw, 12px);
+    width: 100%;
+    padding: 5px;
+    color: rgb(197, 255, 170);
+
+}
+.add:hover{
+    border: 1px solid green;
+    transition: 0.25s;
+    box-shadow: 0 0 30px rgba(0, 255, 0, 0.247);
+    color: rgb(0, 255, 0);
+}
+
 /* Mobile view */
 @media (max-width: 600px) {
     .container {
